@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+:root{
+    --blue: hsl(185, 75%, 39%);
+    --darkblue: hsl(229, 23%, 23%);
+    --grayishblue: hsl(227, 10%, 46%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.fondo{
+    width:100vw;
+    height: 100vh;
+    background-color: var(--blue);
+}
+
+.fondo-top{
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    left: 0;
+    background-image: url('../assets/img/bg-pattern-top.svg');
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+    top: -50%;
+}
+
+.fondo-bottom{
+    position: absolute;
+    right: 0;
+    width: 70%;
+    height: 50%;
+    background-image: url('../assets/img/bg-pattern-top.svg');
+    background-repeat: no-repeat;
+    background-position: 30px 10px;
+    /* background-size: cover; */
+    bottom: 0;
+}
+.card{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 400px;
+    height: 60%;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.5);
+}
+.card .background img{
+    width: 100%;
+    height: 160px;
+    border-radius: 10px 10px 0 0px;
+
+}
+
+
+.card .card-profilePicture img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    border: 5px solid white;
+    left: calc(50% - 50px);
+    top: 110px;
+}
+
+.card-new{
+    display:flex;
+    margin-top: 50px;
+    flex-direction: column;
+    height: calc(100% - 50px - 163px);
+    justify-content: space-evenly;
+    width: 100%;
+    font-weight: 400;
+}
+
+.card-info{
+    font-size: 1.4rem;
+    text-align: center;
+    color: var(--darkblue);
+    align-self: center;
+    justify-self: center;
+}
+.card-separate{
+    border-top: 0.5px solid var(--grayishblue);    
+}
+.card-info--age{
+    color: var(--grayishblue);
+    font-weight: 400;
+}
+
+.card-numbers{
+    display: flex;
+    width: 100%;
+    /* height: 50px; */
+    justify-content: space-evenly;
+    color: var(--darkblue);
+    /* margin-top: 10px;  */
+    /* padding-top: 10px;  */
+}
+.card-description{
+    text-align: center;
+}
+.card-description h2{
+    margin-bottom: 5px;
+}
